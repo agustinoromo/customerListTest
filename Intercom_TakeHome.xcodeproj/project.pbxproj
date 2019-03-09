@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DA9CF2F2234346400D1B855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA9CF2E2234346400D1B855 /* AppDelegate.swift */; };
+		5DA9CF312234346400D1B855 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA9CF302234346400D1B855 /* ViewController.swift */; };
+		5DA9CF342234346400D1B855 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA9CF322234346400D1B855 /* Main.storyboard */; };
+		5DA9CF362234346500D1B855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DA9CF352234346500D1B855 /* Assets.xcassets */; };
+		5DA9CF392234346500D1B855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA9CF372234346500D1B855 /* LaunchScreen.storyboard */; };
+		5DA9CF442234346500D1B855 /* Intercom_TakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA9CF432234346500D1B855 /* Intercom_TakeHomeTests.swift */; };
+		5DA9CF4F2234346500D1B855 /* Intercom_TakeHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA9CF4E2234346500D1B855 /* Intercom_TakeHomeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DA9CF402234346500D1B855 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA9CF232234346400D1B855 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DA9CF2A2234346400D1B855;
+			remoteInfo = Intercom_TakeHome;
+		};
+		5DA9CF4B2234346500D1B855 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA9CF232234346400D1B855 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DA9CF2A2234346400D1B855;
+			remoteInfo = Intercom_TakeHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5DA9CF2B2234346400D1B855 /* Intercom_TakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intercom_TakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA9CF2E2234346400D1B855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DA9CF302234346400D1B855 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DA9CF332234346400D1B855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DA9CF352234346500D1B855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DA9CF382234346500D1B855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DA9CF3A2234346500D1B855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DA9CF3F2234346500D1B855 /* Intercom_TakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Intercom_TakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA9CF432234346500D1B855 /* Intercom_TakeHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intercom_TakeHomeTests.swift; sourceTree = "<group>"; };
+		5DA9CF452234346500D1B855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DA9CF4A2234346500D1B855 /* Intercom_TakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Intercom_TakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA9CF4E2234346500D1B855 /* Intercom_TakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intercom_TakeHomeUITests.swift; sourceTree = "<group>"; };
+		5DA9CF502234346500D1B855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DA9CF282234346400D1B855 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA9CF3C2234346500D1B855 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA9CF472234346500D1B855 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DA9CF222234346400D1B855 = {
+			isa = PBXGroup;
+			children = (
+				5DA9CF2D2234346400D1B855 /* Intercom_TakeHome */,
+				5DA9CF422234346500D1B855 /* Intercom_TakeHomeTests */,
+				5DA9CF4D2234346500D1B855 /* Intercom_TakeHomeUITests */,
+				5DA9CF2C2234346400D1B855 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DA9CF2C2234346400D1B855 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DA9CF2B2234346400D1B855 /* Intercom_TakeHome.app */,
+				5DA9CF3F2234346500D1B855 /* Intercom_TakeHomeTests.xctest */,
+				5DA9CF4A2234346500D1B855 /* Intercom_TakeHomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DA9CF2D2234346400D1B855 /* Intercom_TakeHome */ = {
+			isa = PBXGroup;
+			children = (
+				5DA9CF2E2234346400D1B855 /* AppDelegate.swift */,
+				5DA9CF302234346400D1B855 /* ViewController.swift */,
+				5DA9CF322234346400D1B855 /* Main.storyboard */,
+				5DA9CF352234346500D1B855 /* Assets.xcassets */,
+				5DA9CF372234346500D1B855 /* LaunchScreen.storyboard */,
+				5DA9CF3A2234346500D1B855 /* Info.plist */,
+			);
+			path = Intercom_TakeHome;
+			sourceTree = "<group>";
+		};
+		5DA9CF422234346500D1B855 /* Intercom_TakeHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DA9CF432234346500D1B855 /* Intercom_TakeHomeTests.swift */,
+				5DA9CF452234346500D1B855 /* Info.plist */,
+			);
+			path = Intercom_TakeHomeTests;
+			sourceTree = "<group>";
+		};
+		5DA9CF4D2234346500D1B855 /* Intercom_TakeHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5DA9CF4E2234346500D1B855 /* Intercom_TakeHomeUITests.swift */,
+				5DA9CF502234346500D1B855 /* Info.plist */,
+			);
+			path = Intercom_TakeHomeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DA9CF2A2234346400D1B855 /* Intercom_TakeHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DA9CF532234346500D1B855 /* Build configuration list for PBXNativeTarget "Intercom_TakeHome" */;
+			buildPhases = (
+				5DA9CF272234346400D1B855 /* Sources */,
+				5DA9CF282234346400D1B855 /* Frameworks */,
+				5DA9CF292234346400D1B855 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Intercom_TakeHome;
+			productName = Intercom_TakeHome;
+			productReference = 5DA9CF2B2234346400D1B855 /* Intercom_TakeHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DA9CF3E2234346500D1B855 /* Intercom_TakeHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DA9CF562234346500D1B855 /* Build configuration list for PBXNativeTarget "Intercom_TakeHomeTests" */;
+			buildPhases = (
+				5DA9CF3B2234346500D1B855 /* Sources */,
+				5DA9CF3C2234346500D1B855 /* Frameworks */,
+				5DA9CF3D2234346500D1B855 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DA9CF412234346500D1B855 /* PBXTargetDependency */,
+			);
+			name = Intercom_TakeHomeTests;
+			productName = Intercom_TakeHomeTests;
+			productReference = 5DA9CF3F2234346500D1B855 /* Intercom_TakeHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5DA9CF492234346500D1B855 /* Intercom_TakeHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DA9CF592234346500D1B855 /* Build configuration list for PBXNativeTarget "Intercom_TakeHomeUITests" */;
+			buildPhases = (
+				5DA9CF462234346500D1B855 /* Sources */,
+				5DA9CF472234346500D1B855 /* Frameworks */,
+				5DA9CF482234346500D1B855 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DA9CF4C2234346500D1B855 /* PBXTargetDependency */,
+			);
+			name = Intercom_TakeHomeUITests;
+			productName = Intercom_TakeHomeUITests;
+			productReference = 5DA9CF4A2234346500D1B855 /* Intercom_TakeHomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DA9CF232234346400D1B855 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Agustin Mendoza Romo";
+				TargetAttributes = {
+					5DA9CF2A2234346400D1B855 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5DA9CF3E2234346500D1B855 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5DA9CF2A2234346400D1B855;
+					};
+					5DA9CF492234346500D1B855 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5DA9CF2A2234346400D1B855;
+					};
+				};
+			};
+			buildConfigurationList = 5DA9CF262234346400D1B855 /* Build configuration list for PBXProject "Intercom_TakeHome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DA9CF222234346400D1B855;
+			productRefGroup = 5DA9CF2C2234346400D1B855 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DA9CF2A2234346400D1B855 /* Intercom_TakeHome */,
+				5DA9CF3E2234346500D1B855 /* Intercom_TakeHomeTests */,
+				5DA9CF492234346500D1B855 /* Intercom_TakeHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DA9CF292234346400D1B855 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA9CF392234346500D1B855 /* LaunchScreen.storyboard in Resources */,
+				5DA9CF362234346500D1B855 /* Assets.xcassets in Resources */,
+				5DA9CF342234346400D1B855 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA9CF3D2234346500D1B855 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA9CF482234346500D1B855 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DA9CF272234346400D1B855 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA9CF312234346400D1B855 /* ViewController.swift in Sources */,
+				5DA9CF2F2234346400D1B855 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA9CF3B2234346500D1B855 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA9CF442234346500D1B855 /* Intercom_TakeHomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA9CF462234346500D1B855 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA9CF4F2234346500D1B855 /* Intercom_TakeHomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DA9CF412234346500D1B855 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DA9CF2A2234346400D1B855 /* Intercom_TakeHome */;
+			targetProxy = 5DA9CF402234346500D1B855 /* PBXContainerItemProxy */;
+		};
+		5DA9CF4C2234346500D1B855 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DA9CF2A2234346400D1B855 /* Intercom_TakeHome */;
+			targetProxy = 5DA9CF4B2234346500D1B855 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DA9CF322234346400D1B855 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DA9CF332234346400D1B855 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DA9CF372234346500D1B855 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DA9CF382234346500D1B855 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DA9CF512234346500D1B855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DA9CF522234346500D1B855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DA9CF542234346500D1B855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQWY95C954;
+				INFOPLIST_FILE = Intercom_TakeHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "agustinoromo.Intercom-TakeHome";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DA9CF552234346500D1B855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQWY95C954;
+				INFOPLIST_FILE = Intercom_TakeHome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "agustinoromo.Intercom-TakeHome";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5DA9CF572234346500D1B855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQWY95C954;
+				INFOPLIST_FILE = Intercom_TakeHomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "agustinoromo.Intercom-TakeHomeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Intercom_TakeHome.app/Intercom_TakeHome";
+			};
+			name = Debug;
+		};
+		5DA9CF582234346500D1B855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQWY95C954;
+				INFOPLIST_FILE = Intercom_TakeHomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "agustinoromo.Intercom-TakeHomeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Intercom_TakeHome.app/Intercom_TakeHome";
+			};
+			name = Release;
+		};
+		5DA9CF5A2234346500D1B855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQWY95C954;
+				INFOPLIST_FILE = Intercom_TakeHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "agustinoromo.Intercom-TakeHomeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Intercom_TakeHome;
+			};
+			name = Debug;
+		};
+		5DA9CF5B2234346500D1B855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQWY95C954;
+				INFOPLIST_FILE = Intercom_TakeHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "agustinoromo.Intercom-TakeHomeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Intercom_TakeHome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DA9CF262234346400D1B855 /* Build configuration list for PBXProject "Intercom_TakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA9CF512234346500D1B855 /* Debug */,
+				5DA9CF522234346500D1B855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DA9CF532234346500D1B855 /* Build configuration list for PBXNativeTarget "Intercom_TakeHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA9CF542234346500D1B855 /* Debug */,
+				5DA9CF552234346500D1B855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DA9CF562234346500D1B855 /* Build configuration list for PBXNativeTarget "Intercom_TakeHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA9CF572234346500D1B855 /* Debug */,
+				5DA9CF582234346500D1B855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DA9CF592234346500D1B855 /* Build configuration list for PBXNativeTarget "Intercom_TakeHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DA9CF5A2234346500D1B855 /* Debug */,
+				5DA9CF5B2234346500D1B855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DA9CF232234346400D1B855 /* Project object */;
+}
