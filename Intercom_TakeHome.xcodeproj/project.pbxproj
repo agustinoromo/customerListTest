@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D035EFA2234406100DE553A /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D035EF92234406100DE553A /* Customer.swift */; };
+		5D035EFD223448E100DE553A /* customerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D035EFC223448E100DE553A /* customerList.json */; };
 		5DA9CF2F2234346400D1B855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA9CF2E2234346400D1B855 /* AppDelegate.swift */; };
 		5DA9CF312234346400D1B855 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA9CF302234346400D1B855 /* ViewController.swift */; };
 		5DA9CF342234346400D1B855 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA9CF322234346400D1B855 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D035EF92234406100DE553A /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		5D035EFC223448E100DE553A /* customerList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = customerList.json; sourceTree = "<group>"; };
 		5DA9CF2B2234346400D1B855 /* Intercom_TakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intercom_TakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA9CF2E2234346400D1B855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DA9CF302234346400D1B855 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D035EF622343EDA00DE553A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5D035EFC223448E100DE553A /* customerList.json */,
+				5D035EFB2234406800DE553A /* Model */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5D035EFB2234406800DE553A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D035EF92234406100DE553A /* Customer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5DA9CF222234346400D1B855 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +118,7 @@
 		5DA9CF2D2234346400D1B855 /* Intercom_TakeHome */ = {
 			isa = PBXGroup;
 			children = (
+				5D035EF622343EDA00DE553A /* Networking */,
 				5DA9CF2E2234346400D1B855 /* AppDelegate.swift */,
 				5DA9CF302234346400D1B855 /* ViewController.swift */,
 				5DA9CF322234346400D1B855 /* Main.storyboard */,
@@ -232,6 +254,7 @@
 				5DA9CF392234346500D1B855 /* LaunchScreen.storyboard in Resources */,
 				5DA9CF362234346500D1B855 /* Assets.xcassets in Resources */,
 				5DA9CF342234346400D1B855 /* Main.storyboard in Resources */,
+				5D035EFD223448E100DE553A /* customerList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D035EFA2234406100DE553A /* Customer.swift in Sources */,
 				5DA9CF312234346400D1B855 /* ViewController.swift in Sources */,
 				5DA9CF2F2234346400D1B855 /* AppDelegate.swift in Sources */,
 			);
