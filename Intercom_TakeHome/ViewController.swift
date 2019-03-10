@@ -18,10 +18,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        openJSONFile(forResource: "customerList")
-//        customerListCloseBy = getClosestCustomers(100)
-//        orderCustomerList()
-//        printOutput()
+        parseJSONFile(forResource: "customerList")
+        customerListCloseBy = getClosestCustomers(100)
+        orderCustomerList()
+        printOutput()
     }
     
     private func getClosestCustomers(_ distanceKm: Double) -> [Customer] {
@@ -43,23 +43,15 @@ class ViewController: UIViewController {
         }
     }
     
-    private func openJSONFile(forResource resource: String)  {
+    private func parseJSONFile(forResource resource: String)  {
         
         if let path = Bundle.main.path(forResource: resource, ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-//                let dataResponse = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-                
-//                guard let jsonArray = dataResponse as? [[String:Any]] else { return }
-//
-//                for dict in jsonArray {
-//                    customerList.append(Customer(dict))
-//                }
                 
                 let decoder = JSONDecoder()
-                let model = try decoder.decode([Customer].self, from:
+                customerList = try decoder.decode([Customer].self, from:
                     data)
-                print(model)
                 
             } catch let error {
                 print("Error: ", error)
@@ -68,20 +60,3 @@ class ViewController: UIViewController {
     }
     
 }
-
-//        guard let url = URL(string: "https://s3.amazonaws.com/intercom-take-home-test/customers.txt#") else {return}
-//        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-//            guard let dataResponse = data,
-//                error == nil else {
-//                    print(error?.localizedDescription ?? "Response Error")
-//                    return }
-//            do{
-//                //here dataResponse received from a network request
-//                let jsonResponse = try JSONSerialization.jsonObject(with:
-//                    dataResponse, options: [])
-//                print(jsonResponse) //Response result
-//            } catch let parsingError {
-//                print("Error", parsingError)
-//            }
-//        }
-//        task.resume()

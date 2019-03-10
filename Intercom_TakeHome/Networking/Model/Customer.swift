@@ -15,24 +15,6 @@ struct Customer: Codable {
     private var latitudeString: String
     private var longitudeString: String
     
-    
-//    init( _ dictionary: [String: Any]) {
-//        self.name = dictionary[JsonKeys.name] as? String ?? ""
-//        self.userID = dictionary[JsonKeys.userID] as? Int ?? 0
-//        self.latitude = Double(dictionary[JsonKeys.latitude] as? String ?? "") ?? 0
-//        self.longitude = Double(dictionary[JsonKeys.longitude] as? String ?? "") ?? 0
-//    }
-    
-//    private struct JsonKeys {
-//        static let latitude = "latitude"
-//        static let longitude = "longitude"
-//        static let name = "name"
-//        static let userID = "user_id"
-//    }
-
-}
-
-extension Customer {
     var latitude: Double? {
         return Double(latitudeString)
     }
@@ -41,6 +23,10 @@ extension Customer {
         return Double(longitudeString)
     }
 }
+
+//extension Customer {
+//    
+//}
 
 extension Customer {
     enum CodingKeys: String, CodingKey {
