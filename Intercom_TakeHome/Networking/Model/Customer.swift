@@ -12,15 +12,30 @@ import CoreLocation
 struct Customer: Codable {
     var name: String
     var userID: Int
-    private var latitudeString: String
-    private var longitudeString: String
+    private var latitudeString: String?
+    private var longitudeString: String?
+    
+    init(name: String, userID: Int, latitude: Double, longitude: Double) {
+        self.name = name
+        self.userID = userID
+        self.latitude = latitude
+        self.longitude = longitude
+    }
     
     var latitude: Double? {
-        return Double(latitudeString)
+        get {
+            guard let latitude = latitudeString else { return nil }
+            return Double(latitude)
+        }
+        set(newLatitude) { }
     }
     
     var longitude: Double? {
-        return Double(longitudeString)
+        get {
+            guard let longitude = longitudeString else { return nil }
+            return Double(longitude)
+        }
+        set(newLongitude){}
     }
 }
 

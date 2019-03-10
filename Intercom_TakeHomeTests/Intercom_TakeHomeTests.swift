@@ -7,28 +7,38 @@
 //
 
 import XCTest
+import CoreLocation
 @testable import Intercom_TakeHome
 
 class Intercom_TakeHomeTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    var testCustomer: Customer {
+        return Customer(name: "John", userID: 10, latitude: 52.986375, longitude: -6.043701)
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    var testLocation: CLLocation {
+        return CLLocation(latitude: 53.339428, longitude: -6.257664)
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testJSONMapping() throws {
+        guard let path = Bundle.main.path(forResource: "customerList", ofType: "json") else {
+            XCTFail("Missing file: customerList.json")
+            return
         }
+        let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+        let decoder = JSONDecoder()
+        let customerList = try decoder.decode([Customer].self, from:
+            data)
+        guard let latitude = customerList[0].latitude, let longitude = customerList[0].longitude else { return }
+        
+        XCTAssertEqual(latitude, 52.986375)
+        XCTAssertEqual(longitude, -6.043701)
+    }
+    
+    func testIsWithinDistance() {
+        print(testCustomer.latitude)
+        print(testCustomer.isWithinDistance(100, fromLocation: testLocation))
+        
+        XCTAssertNotNil(testCustomer.isWithinDistance(100, fromLocation: testLocation))
     }
 
 }

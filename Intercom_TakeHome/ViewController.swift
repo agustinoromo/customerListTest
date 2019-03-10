@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         customerListClosest = getClosestCustomers(officedistanceKM)
         customerListClosest.sort{ $0.userID < $1.userID }
         printOutput()
+        customerList[0].latitude = 10.3
+        print("test: ", customerList[0].latitude)
     }
     
     private func getClosestCustomers(_ distanceKm: Double) -> [Customer] {
