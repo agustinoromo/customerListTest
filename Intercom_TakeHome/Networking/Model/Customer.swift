@@ -12,8 +12,20 @@ import CoreLocation
 struct Customer: Codable {
     var name: String
     var userID: Int
-    private var latitudeString: String?
-    private var longitudeString: String?
+    var latitude: Double
+    var longitude: Double
+
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        name = try values.decode(String.self, forKey: .name)
+        userID = try values.decode(Int.self, forKey: .userID)
+        guard let latitude = try Double(values.decode(String.self, forKey: .latitude)), let longitude = try Double(values.decode(String.self, forKey: .longitude)) else {
+            throw DecodingError.dataCorrupted(.init(codingPath: [CodingKeys.latitude], debugDescription: "Expecting string representation of Double"))
+        }
+        self.latitude = latitude
+        self.longitude = longitude
+    }
     
     init(name: String, userID: Int, latitude: Double, longitude: Double) {
         self.name = name
@@ -21,34 +33,17 @@ struct Customer: Codable {
         self.latitude = latitude
         self.longitude = longitude
     }
-    
-    var latitude: Double? {
-        get {
-            guard let latitude = latitudeString else { return nil }
-            return Double(latitude)
-        }
-        set(newLatitude) { }
-    }
-    
-    var longitude: Double? {
-        get {
-            guard let longitude = longitudeString else { return nil }
-            return Double(longitude)
-        }
-        set(newLongitude){}
-    }
 }
 
 extension Customer {
     enum CodingKeys: String, CodingKey {
         case name
         case userID = "user_id"
-        case latitudeString = "latitude"
-        case longitudeString = "longitude"
+        case latitude = "latitude"
+        case longitude = "longitude"
     }
     
-    func isWithinDistance(_ distanceKm: Double, fromLocation location: CLLocation) -> Bool? {
-        guard let latitude = self.latitude, let longitude = self.longitude else { return nil }
+    func isWithinDistance(_ distanceKm: Double, fromLocation location: CLLocation) -> Bool {
         return (location.distance(from: CLLocation(latitude: latitude, longitude: longitude))/1000) > distanceKm ? true : false
     }
     

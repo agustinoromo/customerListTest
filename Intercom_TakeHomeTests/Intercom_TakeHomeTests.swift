@@ -12,12 +12,8 @@ import CoreLocation
 
 class Intercom_TakeHomeTests: XCTestCase {
     
-    var testCustomer: Customer {
-        return Customer(name: "John", userID: 10, latitude: 52.986375, longitude: -6.043701)
-    }
-    var testLocation: CLLocation {
-        return CLLocation(latitude: 53.339428, longitude: -6.257664)
-    }
+    private let testCustomer = Customer(name: "Alice Cahill", userID: 1, latitude: 51.92893, longitude: -10.27699)
+    private let testLocation = CLLocation(latitude: 53.339428, longitude: -6.257664)
     
     func testJSONMapping() throws {
         guard let path = Bundle.main.path(forResource: "customerList", ofType: "json") else {
@@ -28,17 +24,17 @@ class Intercom_TakeHomeTests: XCTestCase {
         let decoder = JSONDecoder()
         let customerList = try decoder.decode([Customer].self, from:
             data)
-        guard let latitude = customerList[0].latitude, let longitude = customerList[0].longitude else { return }
         
-        XCTAssertEqual(latitude, 52.986375)
-        XCTAssertEqual(longitude, -6.043701)
+        XCTAssertEqual(customerList[0].latitude, 52.986375)
+        XCTAssertEqual(customerList[0].longitude, -6.043701)
     }
     
     func testIsWithinDistance() {
-        print(testCustomer.latitude)
-        print(testCustomer.isWithinDistance(100, fromLocation: testLocation))
-        
-        XCTAssertNotNil(testCustomer.isWithinDistance(100, fromLocation: testLocation))
+        XCTAssertTrue(testCustomer.isWithinDistance(100, fromLocation: testLocation))
+        var farCustomer = testCustomer
+        farCustomer.latitude = 52.986375
+        farCustomer.longitude = -6.043701
+        XCTAssertFalse(farCustomer.isWithinDistance(100, fromLocation: testLocation))
     }
 
 }
