@@ -24,10 +24,6 @@ struct Customer: Codable {
     }
 }
 
-//extension Customer {
-//    
-//}
-
 extension Customer {
     enum CodingKeys: String, CodingKey {
         case name
@@ -36,8 +32,8 @@ extension Customer {
         case longitudeString = "longitude"
     }
     
-    func isWithinDistance(_ distanceKm: Double, fromLocation location: CLLocation) -> Bool {
-        guard let latitude = self.latitude, let longitude = self.longitude else { return false }
+    func isWithinDistance(_ distanceKm: Double, fromLocation location: CLLocation) -> Bool? {
+        guard let latitude = self.latitude, let longitude = self.longitude else { return nil }
         return (location.distance(from: CLLocation(latitude: latitude, longitude: longitude))/1000) > distanceKm ? true : false
     }
     

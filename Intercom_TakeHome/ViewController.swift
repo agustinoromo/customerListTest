@@ -11,16 +11,17 @@ import CoreLocation
 
 class ViewController: UIViewController {
     
-    var intercomLocation = CLLocation(latitude: 53.339428, longitude: -6.257664)
+    let intercomLocation = CLLocation(latitude: 53.339428, longitude: -6.257664)
+    let officedistanceKM: Double = 100
     var customerList = [Customer]()
-    var customerListCloseBy = [Customer]()
+    var customerListClosest = [Customer]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         parseJSONFile(forResource: "customerList")
-        customerListCloseBy = getClosestCustomers(100)
-        orderCustomerList()
+        customerListClosest = getClosestCustomers(officedistanceKM)
+        customerListClosest.sort{ $0.userID < $1.userID }
         printOutput()
     }
     
@@ -30,25 +31,16 @@ class ViewController: UIViewController {
         }
     }
     
-    private func orderCustomerList() {
-        guard !customerList.isEmpty else { return }
-        customerList.sort{ u1, u2 in
-            return u1.userID > u2.userID
-        }
-    }
-    
     private func printOutput() {
-        customerListCloseBy.forEach {
-            print("\($0.name)")
+        customerListClosest.forEach {
+            print("User ID: \($0.userID), Name: \($0.name)")
         }
     }
     
     private func parseJSONFile(forResource resource: String)  {
-        
         if let path = Bundle.main.path(forResource: resource, ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                
                 let decoder = JSONDecoder()
                 customerList = try decoder.decode([Customer].self, from:
                     data)
