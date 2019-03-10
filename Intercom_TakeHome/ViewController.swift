@@ -18,17 +18,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        runTest()
+    }
+    
+    private func runTest() {
         parseJSONFile(forResource: "customerList")
         customerListClosest = getClosestCustomers(officedistanceKM)
         customerListClosest.sort{ $0.userID < $1.userID }
         printOutput()
-        var customer = customerList[0]
-        customer.latitude = 10.3
-        print("test: ", customer.latitude)
     }
     
-    private func getClosestCustomers(_ distanceKm: Double) -> [Customer] {
+    func getClosestCustomers(_ distanceKm: Double) -> [Customer] {
         return customerList.filter {
             $0.isWithinDistance(distanceKm, fromLocation: intercomLocation) == true
         }
